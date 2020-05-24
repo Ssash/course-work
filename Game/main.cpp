@@ -11,7 +11,7 @@ int main() {
 	system("title Game");
 	system("color 0A");																				//��������� ����� ������
 	HANDLE hCons = GetStdHandle(STD_OUTPUT_HANDLE);													//��������� ����������� ����������� ����
-	CONSOLE_CURSOR_INFO cursor = { 100,false };														//�������� �������
+	CONSOLE_CURSOR_INFO cursor = { 100,false };														
 	SetConsoleCursorInfo(hCons, &cursor);
 	startMenu(1);
 	return 0;
