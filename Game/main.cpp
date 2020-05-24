@@ -4,16 +4,14 @@
 #include "Headerfunction.h"
 
 using namespace std;
-
-																		//переменные координат и направление движения мяча
-
+																		//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 int main() {
 	setlocale(LC_ALL, "rus");
-	system("mode con cols=70 lines=25");															//установка размера окна
+	system("mode con cols=70 lines=25");															//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	system("title Game");
-	system("color 0A");																				//установка цвета шрифта
-	HANDLE hCons = GetStdHandle(STD_OUTPUT_HANDLE);													//получение дескриптора консольного окна
-	CONSOLE_CURSOR_INFO cursor = { 100,false };														//сокрытие курсора
+	system("color 0A");																				//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	HANDLE hCons = GetStdHandle(STD_OUTPUT_HANDLE);													//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	CONSOLE_CURSOR_INFO cursor = { 100,false };														//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	SetConsoleCursorInfo(hCons, &cursor);
 	startMenu(1);
 	return 0;
